@@ -24,8 +24,8 @@ jobs:
         id: ip
         uses: haythem/public-ip@v1
     
-    - name: Print IP address
-       run: |
-         echo ${{ steps.ip.outputs.ipv4 }}
-         echo ${{ steps.ip.outputs.ipv6 }}
+      - name: Print IP address
+        run: |
+          echo ${{ steps.ip.outputs.ipv4 }}
+          echo ${{ steps.ip.outputs.ipv6 }}
          
